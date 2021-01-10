@@ -11,4 +11,6 @@
     <string name="correct">Answer is correct</string>
     <string name="Wrong">Answer is wrong</string>
     <string name="by_mehedi">by Mehedi</string>
+    <string name="highest_score_34">Current score = </string>
+    <string name="highestscore">Highestscore :</string>
 </resources>

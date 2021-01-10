@@ -23,13 +23,13 @@
         android:id="@+id/txtitle"
         android:layout_width="115dp"
         android:layout_height="46dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="136dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/trivia"
         android:textColor="#FB0606"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintHorizontal_bias="0.584"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,7 +37,7 @@
         android:id="@+id/cardview"
         android:layout_width="377dp"
         android:layout_height="203dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="64dp"
         app:cardBackgroundColor="#FFEB3B"
         app:cardCornerRadius="10dp"
         app:cardElevation="8dp"
@@ -45,7 +45,6 @@
         app:cardUseCompatPadding="true"
         app:contentPadding="6dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtitle">
 
@@ -53,26 +52,25 @@
             android:id="@+id/ques"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:padding="6dp"
             android:text="@string/questions_are_shown_here"
             android:textColor="#000000"
-            android:textSize="18sp"
-            android:layout_gravity="center"
-            />
+            android:textSize="18sp" />
     </androidx.cardview.widget.CardView>
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="108dp"
         android:layout_height="63dp"
+        android:contentDescription="@string/logo"
         app:layout_constraintBottom_toTopOf="@+id/txtitle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintHorizontal_bias="0.57"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814"
-        app:srcCompat="@drawable/ic_icon"
-        android:contentDescription="@string/logo" />
+        app:layout_constraintVertical_bias="0.808"
+        app:srcCompat="@drawable/ic_icon" />
 
     <Button
         android:id="@+id/btnright"
@@ -123,5 +121,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtitle"
         app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/highest_score_34"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardview"
+        app:layout_constraintEnd_toStartOf="@+id/count"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/hscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/highestscore"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/highscore"
+        app:layout_constraintEnd_toStartOf="@+id/count"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
